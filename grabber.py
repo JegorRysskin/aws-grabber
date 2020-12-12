@@ -48,8 +48,8 @@ def get_credentials(user, passwd):
     payload = { 'sender': 'home', 'loginid': user, 'passwd': passwd}
     headers = {'User-Agent':ua, 'Accept-Language': 'en-GB,en;q=0.5'}
     url3 = url + '/main/main.php?m=course&code=vc_2_0_AWS'
-    url4 = url + '/main/main.php?m=editor&nav=1&asnid=14334&stepid=14335'
-    url5 = url + "/util/vcput.php?a=getaws&nores=0&stepid=14335&mode=s&type=0&vockey="
+    url4 = url + '/main/main.php?m=editor&nav=1&asnid=221024&stepid=221025'
+    url5 = url + "/util/vcput.php?a=getaws&nores=0&stepid=221025&mode=s&type=0&vockey="
     with requests.session() as s:
         s.get(url, headers=headers, stream=True)
         s.post(url2,data=payload, headers=headers, stream=True)
